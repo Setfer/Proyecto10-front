@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sevillana&display=swap');
+
+
+:root {
+
+  --color-header: #5E503F;
+  --color-secondary: #6c757d; 
+  --color-accent: #49111C; 
+  --color-background: #A9927D;
+
+
+  --color-grey :#666;
+  --color-light: #f2f4f3;
+
+
+  --color-font-primary: #333; 
+
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Sevillana';
+
+ 
+  --font-size-small: 0.875rem; 
+  --font-size-base: 1rem; 
+  --font-size-large: 1.25rem; 
+  --font-size-title: 1.90rem; 
+
+ 
+  --spacing-small: 8px;
+  --spacing-base: 16px;
+  --spacing-large: 32px;
+
+
+  --border-radius: 5px;
+  --border-radius-large: 10px;
+
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--color-background);
+  flex: 1
+}
+ 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; 
+}
+

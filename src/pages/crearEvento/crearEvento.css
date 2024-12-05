@@ -1,0 +1,109 @@
+
+#add-evento {
+  border-radius: var(--border-radius-large);
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#add-evento > form{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#add-evento h2 {
+  text-align: center;
+  font-size: var(--font-size-title);
+  color: var(--color-font-primary);
+  margin-bottom: var(--spacing-large);
+}
+
+
+#add-evento form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+}
+
+#add-evento input {
+  padding: 10px;
+  font-size: var(--font-size-base);
+  border: none;
+  border-radius: var(--border-radius-large);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#add-evento input::placeholder{
+  text-align: center; 
+}
+
+#titulo{
+  width: 350px;
+}
+#descripcion{
+  text-align: center; 
+  width :100%;
+  max-width: 550px;
+  height: 200px;
+  padding: 10px;
+  font-size: var(--font-size-base);
+  border: none;
+  border-radius: var(--border-radius-large);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+#add-evento > #lista-eventos{
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  transition: transform 0.5s ease;
+  gap: var(--spacing-small);
+  font-size: var(--font-size-base);
+  color: var(--color-light);
+  gap: var(--spacing-base);
+}
+
+#add-evento > #lista-eventos> img {
+  width: 620px;
+  height: 475px;
+}
+
+
+
+@media (max-width: 768px) {
+  #add-evento {
+    padding: 100px; 
+  }
+
+  #add-evento h2 {
+    font-size: var(--font-size-large); 
+    margin-bottom: var(--spacing-medium);
+  }
+
+  #titulo, #descripcion {
+    max-width: 100%; 
+  }
+
+  #descripcion {
+    height: 150px; 
+  }
+
+
+  #add-evento > #lista-eventos > img {
+    width: 275px;
+    height: 325px; 
+  }
+
+  #add-evento > #lista-eventos{
+    height: 450px;
+    width: 300px;
+  }
+}

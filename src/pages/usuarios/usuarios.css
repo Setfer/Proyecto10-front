@@ -1,0 +1,66 @@
+
+#mi_usuario {
+  padding-top: 100px;
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-base);
+}
+
+#mi_usuario > h2 {
+  color: var(--color-font-primary);
+  font-size: var(--font-size-title);
+
+}
+#mi_usuario > h3 {
+  color: var(--color-font-primary);
+  font-size: var(--font-size-title);
+}
+
+
+#usuariocontainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+}
+
+
+
+
+#usuariocontainer img {
+  border-radius: var(--border-radius-large);
+  width: 200px;
+  height: 280px;
+}
+
+
+
+#usuariocontainer h3 {
+  font-size: var(--font-size-large);
+  color: var(--color-font-primary);
+}
+
+#usuariocontainer  input {
+  padding: 5px;
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+
+#usuariocontainer > li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#usuariocontainer > li > div > button {
+  margin-top: 9px;
+}
+
+#modificar-correo, #modificar-avatar{
+  margin: auto;
+}
+

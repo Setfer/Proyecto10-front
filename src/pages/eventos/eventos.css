@@ -1,0 +1,12 @@
+#eventos{
+  padding-top: 100px;
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+#eventos > h2 {
+  font-size: var(--font-size-title);
+  margin-bottom: var(--spacing-large);
+  font-family: var(--font-primary);
+  color: var(--color-font-primary);
+}

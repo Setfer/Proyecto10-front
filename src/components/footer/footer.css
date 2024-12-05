@@ -1,0 +1,15 @@
+footer {
+  background-color: var(--color-header);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light);
+  font-size: var(--font-size-large);
+  font-family: var(--font-secondary);
+ width: 100%;
+}
+
+footer > h3{
+  font-weight: normal;
+}

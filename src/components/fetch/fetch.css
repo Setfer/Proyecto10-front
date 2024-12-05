@@ -1,0 +1,36 @@
+.estado-peticion {
+  z-index: 100;
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 20px;
+  border-radius: 18px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 1; 
+  transform: translate(-50%, -60%); 
+  pointer-events: none; 
+  transition: opacity 2.6s ease, transform 2.6s ease; 
+}
+
+.cargando {
+  background-color: orange;
+  opacity: 1;
+  transform: translate(-50%, -50%); 
+}
+
+.realizada {
+  background-color: green;
+  opacity: 0;
+  transform: translate(-50%, -40%); 
+}
+
+.error {
+  background-color: red;
+  opacity: 0; 
+  transform: translate(-50%, -40%);
+  transition: opacity 10.6s
+}
+

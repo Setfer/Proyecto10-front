@@ -1,0 +1,149 @@
+
+#eventos-container {
+  border-radius: var(--border-radius-large);
+  font-family: var(--font-primary);
+}
+
+
+#ordenar-eventos {
+  display: flex;
+  justify-content: flex-star;
+  margin: var(--spacing-base);
+}
+
+#ordenar-eventos label {
+  margin-right: var(--spacing-small);
+  font-size: var(--font-size-base);
+  color: var(--color-font-primary);
+}
+
+#ordenar-eventos select {
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-small);
+}
+
+
+#lista-eventos {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-large);
+  justify-content: center;
+}
+
+
+.evento-info {
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  transition: transform 0.5s ease;
+  gap: var(--spacing-small);
+  margin: 18px;
+}
+
+.evento-info > img {
+  width: 360px;
+  height: 275px;
+}
+
+.evento-info h3 {
+  font-size: var(--font-size-large);
+  margin: 10px 0 5px;
+  color: var(--color-light);
+}
+
+#lista-eventos li h4,
+#lista-eventos li h5 {
+  font-size: var(--font-size-small);
+  color: var(--color-light);
+  text-align: center;
+}
+
+
+#lista-eventos button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-small);
+  cursor: pointer;
+  color: var(--color-light);
+}
+
+#lista-eventos li button.asistir {
+  background-color: #4caf50;
+  color: var(--color-light);
+}
+
+#lista-eventos li button.no_asistir {
+  background-color: #f44336;
+  color:  var(--color-light);
+}
+
+#lista-eventos li button:hover {
+  opacity: 0.9;
+}
+
+.evento-info:hover{
+  transform: scale(1.10); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10
+}
+
+
+.evento-info h5,
+.evento-info button{
+ display: none;
+}
+
+.asistentes-container{
+  display: none;
+  font-size: var(--font-size-small);
+  color: var(--color-background);
+}
+
+.evento-info:hover h5,
+.evento-info:hover button,
+.evento-info:hover .asistentes-container{ 
+  display: block;
+}
+
+.asistentes-container img{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .evento-info {
+    width: 340px;    
+  }
+  
+  .evento-info > img {
+    width: 340px;
+    height: 265px;
+  }
+  
+
+  .evento-info:hover{
+    transform: none;
+  }
+
+  #ordenar-eventos {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+
