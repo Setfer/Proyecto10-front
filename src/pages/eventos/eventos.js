@@ -5,7 +5,6 @@ import {
   ordenarEventos
 } from '../../components/mostrarEventos/mostrarEventos'
 
-
 const template = () => `
   <section id="eventos">
    <h2>Estos son los proximos eventos :</h2>
@@ -14,10 +13,10 @@ const template = () => `
   </section>
 `
 
-
-
 export const getEventos = async () => {
-  const data = await peticionFetch('http://3.75.158.163:10000/api/v1/eventos')
+  const data = await peticionFetch(
+    'https://proyecto10-back.onrender.com/api/v1/eventos'
+  )
   const dataRes = await data.json()
 
   ordenarEventos(dataRes)
