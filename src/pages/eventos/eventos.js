@@ -17,7 +17,7 @@ const template = () => `
 
 
 export const getEventos = async () => {
-  const data = await peticionFetch('http://localhost:3000/api/v1/eventos')
+  const data = await peticionFetch('http://3.75.158.163:3000/api/v1/eventos')
   const dataRes = await data.json()
 
   ordenarEventos(dataRes)
