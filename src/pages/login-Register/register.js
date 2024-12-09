@@ -62,7 +62,7 @@ const registerSubmit = async () => {
 
   try {
     const data = await peticionFetch(
-      'http://localhost:3000/api/v1/usuarios/registro',
+      '/api/v1/usuarios/registro',
       'POST',
       formData
     )

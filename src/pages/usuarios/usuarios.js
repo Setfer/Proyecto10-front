@@ -24,7 +24,7 @@ const miUsuario = async () => {
 
 
   const usuarioData = await peticionFetch(
-    `http://localhost:3000/api/v1/usuarios/${id}`,
+    `/api/v1/usuarios/${id}`,
     'GET',
     '',
     token
@@ -152,7 +152,7 @@ const modificarAtributos = async (atributo, tipo = 'text') => {
       }
       try {
         await peticionFetch(
-          `http://localhost:3000/api/v1/usuarios/${id}`,
+          `/api/v1/usuarios/${id}`,
           'PUT',
           body,
           token

@@ -47,7 +47,7 @@ const postEvento = async () => {
 
   try {
     const post = await peticionFetch(
-      'http://localhost:3000/api/v1/eventos',
+      '/api/v1/eventos',
       'POST',
       formData,
       token

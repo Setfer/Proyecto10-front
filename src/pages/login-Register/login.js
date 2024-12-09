@@ -23,7 +23,7 @@ const loginSubmit = async (correo, password) => {
   }
 
   const data = await peticionFetch(
-    'http://localhost:3000/api/v1/usuarios/login',
+    '/api/v1/usuarios/login',
     'POST',
     body
   )

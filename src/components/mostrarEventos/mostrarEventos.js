@@ -133,7 +133,7 @@ const asistirEvento = async (idEvento) => {
     eventos: [idEvento]
   }
   const addEventosUserData = await peticionFetch(
-    `http://3.75.158.163:3000/api/v1/usuarios/${id}`,
+    `/api/v1/usuarios/${id}`,
     'PUT',
     evento,
     token
@@ -144,7 +144,7 @@ const asistirEvento = async (idEvento) => {
     asistentes: [id]
   }
   const addUserEventoData = await peticionFetch(
-    `http://localhost:3000/api/v1/eventos/${idEvento}`,
+    `/api/v1/eventos/${idEvento}`,
     'PUT',
     usuario,
     token
@@ -163,7 +163,7 @@ const cancelarAsistencia = async (idEvento) => {
     eventos: idEvento
   }
   const deleteEventoUserData = await peticionFetch(
-    `http://localhost:3000/api/v1/usuarios/removeevento/${id}`,
+    `/api/v1/usuarios/removeevento/${id}`,
     'PUT',
     evento,
     token
@@ -173,7 +173,7 @@ const cancelarAsistencia = async (idEvento) => {
     asistentes: [id]
   }
   const deleteUserEventoData = await peticionFetch(
-    `http://localhost:3000/api/v1/eventos/removeusuario/${idEvento}`,
+    `/api/v1/eventos/removeusuario/${idEvento}`,
     'PUT',
     usuario,
     token
