@@ -15,7 +15,7 @@ const template = () => `
 
 export const getEventos = async () => {
   const data = await peticionFetch(
-    'https://proyecto10-back.onrender.com/api/v1/eventos'
+    '/api/v1/eventos'
   )
   const dataRes = await data.json()
 

@@ -2,7 +2,7 @@ import './fetch.css'
 
 
 export const peticionFetch = async (
-  url,
+  route,
   method = 'GET',
   body = '',
   token = ''
@@ -36,7 +36,7 @@ export const peticionFetch = async (
     options.headers.Authorization = `Bearer ${token}`
   }
   try {
-    const response = await fetch(url, options)
+    const response = await fetch(`https://proyecto10-back.onrender.com${route}`, options)
     if (!response.ok) {
      
       switch (response.status) {
