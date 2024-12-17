@@ -60,7 +60,7 @@ export const peticionFetch = async (
    
     estadoPeticion.className = 'estado-peticion realizada'
     estadoPeticion.textContent = 'Completado'
-    return await response
+    return response
   } catch (error) {
 
     estadoPeticion.className = 'estado-peticion error'
